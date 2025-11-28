@@ -53,5 +53,3 @@ jobs:
         run: |
           echo "✅ Static site validation complete"
           echo "📦 Project is ready for deployment"
-
-
