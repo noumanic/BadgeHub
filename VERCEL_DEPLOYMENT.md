@@ -61,31 +61,13 @@ Vercel will automatically:
 
 If you want more control or need to use GitHub Actions:
 
-### Step 1: Get Vercel Tokens
+**📖 See [VERCEL_SECRETS_GUIDE.md](VERCEL_SECRETS_GUIDE.md) for detailed step-by-step instructions on getting all required secrets.**
 
-1. Go to [vercel.com/account/tokens](https://vercel.com/account/tokens)
-2. Create a new token
-3. Copy the token (you'll need it)
+### Quick Summary:
 
-### Step 2: Get Vercel Project IDs
-
-1. Install Vercel CLI:
-   ```bash
-   npm install -g vercel
-   ```
-
-2. Login to Vercel:
-   ```bash
-   vercel login
-   ```
-
-3. Link your project:
-   ```bash
-   vercel link
-   ```
-   This will create a `.vercel` folder with your project IDs.
-
-4. Get your Organization ID and Project ID from `.vercel/project.json`
+1. **Get Vercel Token**: [vercel.com/account/tokens](https://vercel.com/account/tokens)
+2. **Get Org ID & Project ID**: Use Vercel CLI (`vercel link`) or from project settings
+3. **Add to GitHub Secrets**: Repository Settings → Secrets → Actions
 
 ### Step 3: Add GitHub Secrets
 
@@ -220,4 +202,5 @@ Your BadgeHub site will now automatically deploy to Vercel whenever you push to 
 - [Vercel Documentation](https://vercel.com/docs)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [Vercel Support](https://vercel.com/support)
+
 
