@@ -1,0 +1,34 @@
+{
+  "name": "badgehub",
+  "version": "1.0.0",
+  "description": "Comprehensive guide to earning GitHub achievement badges with detailed instructions and strategies",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 8080 -o",
+    "serve": "python -m http.server 8080"
+  },
+  "keywords": [
+    "github",
+    "badges",
+    "achievements",
+    "guide",
+    "documentation",
+    "open-source",
+    "github-badges",
+    "quickdraw",
+    "starstruck",
+    "yolo",
+    "pair-extraordinaire"
+  ],
+  "author": "Muhammad Nouman Hafeez <noumanhafeez.nh11@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noumanic/BadgeHub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/noumanic/BadgeHub/issues"
+  },
+  "homepage": "https://github.com/noumanic/BadgeHub#readme"
+}
+
