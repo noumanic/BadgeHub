@@ -36,10 +36,6 @@
 
 html {
     scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 body {
@@ -50,10 +46,6 @@ body {
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 .container {
@@ -156,19 +148,14 @@ body {
 .hero-section {
     background: linear-gradient(135deg, #0969da 0%, #0550ae 50%, #033d8b 100%);
     background-color: #0969da;
-    background-attachment: fixed;
     color: white;
-    padding: 0;
+    padding: 140px 24px 100px;
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
-    height: 100vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 100%;
-    margin: 0;
-    box-sizing: border-box;
 }
 
 .hero-section::before {
@@ -181,20 +168,6 @@ body {
     background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
     opacity: 0.4;
     z-index: 1;
-    pointer-events: none;
-}
-
-.hero-section::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
-    z-index: 1;
-    pointer-events: none;
 }
 
 .hero-background {
@@ -213,8 +186,6 @@ body {
     z-index: 2;
     text-align: center;
     width: 100%;
-    padding: 120px 24px 80px;
-    box-sizing: border-box;
 }
 
 .hero-badge {
@@ -326,24 +297,18 @@ body {
 .hero-visual {
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
-    bottom: 0;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    opacity: 0.2;
+    opacity: 0.15;
     pointer-events: none;
     z-index: 1;
-    overflow: hidden;
 }
 
 .badge-showcase {
     position: relative;
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .floating-badge {
@@ -354,26 +319,26 @@ body {
 }
 
 .floating-badge:nth-child(1) {
-    top: 15%;
-    right: 15%;
+    top: 20%;
+    right: 10%;
     animation-delay: 0s;
 }
 
 .floating-badge:nth-child(2) {
-    top: 45%;
-    right: 25%;
+    top: 50%;
+    right: 30%;
     animation-delay: 1.5s;
 }
 
 .floating-badge:nth-child(3) {
-    bottom: 20%;
-    right: 10%;
+    top: 70%;
+    right: 15%;
     animation-delay: 3s;
 }
 
 .floating-badge:nth-child(4) {
-    top: 30%;
-    left: 10%;
+    top: 40%;
+    right: 50%;
     animation-delay: 4.5s;
 }
 
@@ -383,26 +348,6 @@ body {
     }
     50% {
         transform: translateY(-20px) rotate(5deg);
-    }
-}
-
-/* Scroll Indicator */
-.hero-section .scroll-indicator {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-    color: rgba(255, 255, 255, 0.7);
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateX(-50%) translateY(0);
-    }
-    50% {
-        transform: translateX(-50%) translateY(-10px);
     }
 }
 
@@ -1010,12 +955,7 @@ body {
     }
 
     .hero-section {
-        min-height: 100vh;
-        height: 100vh;
-    }
-
-    .hero-content {
-        padding: 100px 16px 60px;
+        padding: 80px 16px 60px;
     }
 
     .hero-stats {

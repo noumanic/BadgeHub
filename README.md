@@ -81,14 +81,6 @@ GitHub Achievement Badges are special recognitions that appear on your GitHub pr
 - Basic knowledge of Git commands
 - A public repository (badges only work on public repos)
 
-### 🌐 Live Deployment
-
-BadgeHub is automatically deployed to Vercel on every push to the `main` branch.
-
-**Live Site**: [View on Vercel](#) (configure after Vercel setup)
-
-See [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md) for deployment setup instructions.
-
 ### Get Your First Badge in 5 Minutes
 
 1. **Create a Public Repository**

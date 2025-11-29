@@ -18,21 +18,21 @@ jobs:
 
       - name: Validate HTML files
         run: |
-          echo "✅ Checking HTML files..."
+          echo "Checking HTML files..."
           find . -name "*.html" -type f -not -path "./.git/*" | while read file; do
             echo "  Found: $file"
           done
 
       - name: Validate CSS files
         run: |
-          echo "✅ Checking CSS files..."
+          echo "Checking CSS files..."
           find . -name "*.css" -type f -not -path "./.git/*" | while read file; do
             echo "  Found: $file"
           done
 
       - name: Validate JavaScript files
         run: |
-          echo "✅ Checking JavaScript files..."
+          echo "Checking JavaScript files..."
           find . -name "*.js" -type f -not -path "./.git/*" | while read file; do
             echo "  Found: $file"
           done
@@ -40,16 +40,16 @@ jobs:
       - name: Check required files exist
         run: |
           if [ ! -f "index.html" ]; then
-            echo "❌ index.html not found"
+            echo "index.html not found"
             exit 1
           fi
           if [ ! -f "styles.css" ]; then
-            echo "❌ styles.css not found"
+            echo "styles.css not found"
             exit 1
           fi
-          echo "✅ All required files present"
+          echo "All required files present"
 
       - name: Summary
         run: |
-          echo "✅ Static site validation complete"
-          echo "📦 Project is ready for deployment"
+          echo "Static site validation complete"
+          echo "Project is ready for deployment"
