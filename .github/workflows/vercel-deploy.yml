@@ -19,10 +19,15 @@ jobs:
 
       - name: Verify Secrets
         run: |
-          if [ -z "$VERCEL_TOKEN" ]; then echo "❌ Missing VERCEL_TOKEN"; exit 1; fi
-          if [ -z "$VERCEL_ORG_ID" ]; then echo "❌ Missing VERCEL_ORG_ID"; exit 1; fi
-          if [ -z "$VERCEL_PROJECT_ID" ]; then echo "❌ Missing VERCEL_PROJECT_ID"; exit 1; fi
-          echo "✅ All secrets exist"
+          if [ -z "$VERCEL_TOKEN" ]; then 
+            echo "Missing VERCEL_TOKEN"
+            echo "Add it at: https://github.com/noumanic/BadgeHub/settings/secrets/actions"
+            exit 1
+          fi
+          if [ -z "$VERCEL_ORG_ID" ]; then echo "Missing VERCEL_ORG_ID"; exit 1; fi
+          if [ -z "$VERCEL_PROJECT_ID" ]; then echo "Missing VERCEL_PROJECT_ID"; exit 1; fi
+          echo "All secrets are set"
+          echo "Token length: ${#VERCEL_TOKEN} characters"
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
